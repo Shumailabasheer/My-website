@@ -1,3 +1,4 @@
+import { FaTwitter,FaFacebook, FaInstagramSquare,FaGithub} from "react-icons/fa";
 export default function NewsletterFooter() {
     return (
       <>
@@ -20,48 +21,68 @@ export default function NewsletterFooter() {
 </div>
 
 {/* Footer Section */}
-<footer className="bg-slate-200 text-slate-950 py-10 ">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<footer className="bg-slate-200 text-slate-950 py-10">
+  <div className="max-w-7xl mx-auto flex flex-nowrap justify-between items-start gap-6 overflow-x-auto">
     {/* Footer Column 1 */}
-
-
-    <div className="space-y-4 px-20">
+    <div className="space-y-4 w-[200px] flex-shrink-0">
     <h3 className="text-lg font-semibold">SHOP.CO</h3>
     <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+    <div className="flex flex-row gap-2">
+    <FaTwitter />
+    <FaFacebook />
+    <FaInstagramSquare/>
+    <FaGithub />
+    </div>
+    
     </div>
 
 
-
-
-
-    <div className="space-y-4 px-20">
+{/* footer1 */}
+    <div className="space-y-4 w-[200px] flex-shrink-0">
       <h3 className="text-lg font-semibold">Company</h3>
       <ul>
-        <li><a href="/about" className="hover:underline">About Us</a></li>
-        <li><a href="/contact" className="hover:underline">Contact Us</a></li>
-        <li><a href="/careers" className="hover:underline">Careers</a></li>
+        <li><a href="/about" className="hover:underline">About</a></li>
+        <li><a href="/contact" className="hover:underline">Features</a></li>
+        <li><a href="/careers" className="hover:underline">Works</a></li>
+        <li><a href="/careers" className="hover:underline">Career</a></li>
       </ul>
     </div>
 
     {/* Footer Column 2 */}
-    <div className="space-y-4">
-      <h3 className="text-lg font-semibold">Quick Links</h3>
+    <div className="space-y-4 w-[200px] flex-shrink-0">
+      <h3 className="text-lg font-semibold">Help</h3>
       <ul>
+      <li><a href="/terms" className="hover:underline">Customer Support</a></li>
+      <li><a href="/terms" className="hover:underline">Delivery Details</a></li>
         <li><a href="/terms" className="hover:underline">Terms & Conditions</a></li>
         <li><a href="/privacy" className="hover:underline">Privacy Policy</a></li>
-        <li><a href="/faq" className="hover:underline">FAQ</a></li>
       </ul>
     </div>
 
-    {/* Footer Column 3 */}
-    <div className="space-y-4">
-      <h3 className="text-lg font-semibold">Follow Us</h3>
-      <div className="flex space-x-4">
-        <a href="#" className="text-black hover:text-blue-400">Facebook</a>
-        <a href="#" className="text-black hover:text-blue-400">Twitter</a>
-        <a href="#" className="text-black hover:text-blue-400">Instagram</a>
-      </div>
+ {/* Footer Column 3 */}
+ <div className="space-y-4 w-[200px] flex-shrink-0">
+      <h3 className="text-lg font-semibold">FAQ</h3>
+      <ul>
+      <li><a href="/terms" className="hover:underline">Account</a></li>
+      <li><a href="/terms" className="hover:underline">Manage Deliveries</a></li>
+        <li><a href="/terms" className="hover:underline">Orders</a></li>
+        <li><a href="/privacy" className="hover:underline">Payments</a></li>
+      </ul>
     </div>
+
+ {/* Footer Column 4 */}
+ <div className="space-y-4 w-[200px] flex-shrink-0">
+      <h3 className="text-lg font-semibold">Resources</h3>
+      <ul>
+      <li><a href="/terms" className="hover:underline">Free eBooks</a></li>
+      <li><a href="/terms" className="hover:underline">Development Tutorial</a></li>
+        <li><a href="/terms" className="hover:underline">How to - Blog</a></li>
+        <li><a href="/privacy" className="hover:underline">Youtube Playlist</a></li>
+      </ul>
+    </div>
+
+
+
   </div>
 
   {/* Footer Bottom */}

@@ -63,8 +63,8 @@ export default function ProductDetails() {
             <div className="text-sm line-through text-gray-500">$300</div>
 
             <p className="text-sm text-gray-600 mt-4">
-              This graphic fabric is perfect for any occasion. Crafted from a
-              soft and breathable fabric, it offers superior comfort and style.
+              "This graphic fabric is perfect for any occasion. Crafted from a
+              soft and breathable fabric, it offers superior comfort and style."
             </p>
 
             {/* Color and Size Selection */}
@@ -113,8 +113,8 @@ export default function ProductDetails() {
     <div className="p-12 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <p className="font-bold text-lg">Samantha D.</p>
       <p className="text-gray-500 text-sm mt-2">
-        ""I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer,
-         I appreciate the attention to detail. It's become my favorite go-to shirt.""
+        "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer,
+         I appreciate the attention to detail. It's become my favorite go-to shirt."
       </p>
       <h1 className="mt-4">Posted on August 14, 2023</h1>
     </div>
@@ -123,9 +123,9 @@ export default function ProductDetails() {
     <div className="p-12 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <p className="font-bold text-lg">Alex M.</p>
       <p className="text-gray-500 text-sm mt-2">
-        ""The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. 
+        "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. 
         Being a UI/UX designer myself, I'm quite picky about aesthetics,
-         and this t-shirt definitely gets a thumbs up from me.""
+         and this t-shirt definitely gets a thumbs up from me."
       </p>
       <h1 className="mt-4">Posted on August 15, 2023</h1>
     </div>
@@ -134,9 +134,9 @@ export default function ProductDetails() {
     <div className="p-12 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <p className="font-bold text-lg">Ethan R.</p>
       <p className="text-gray-500 text-sm mt-2">
-        ""This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern 
+        "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern 
         caught my eye, and the fit is perfect. 
-        I can see the designer's touch in every aspect of this shirt.""
+        I can see the designer's touch in every aspect of this shirt."
       </p>
       <h1 className="mt-4">Posted on August 16, 2023</h1>
     </div>
@@ -154,9 +154,9 @@ export default function ProductDetails() {
  <div className="p-12 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <p className="font-bold text-lg">Olivia P.</p>
       <p className="text-gray-500 text-sm mt-2">
-        ""As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those
-         principles but also feels great to wear. 
-        It's evident that the designer poured their creativity into making this t-shirt stand out.""
+        "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those
+         principles but also feels great to wear.
+        It's evident that the designer poured their creativity into making this t-shirt stand out."
       </p>
       <h1 className="mt-4">Posted on August 18, 2023</h1>
     </div>
@@ -166,9 +166,9 @@ export default function ProductDetails() {
  <div className="p-12 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <p className="font-bold text-lg">Ava H.</p>
       <p className="text-gray-500 text-sm mt-2">
-        ""I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. 
+        "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. 
         The intricate details and thoughtful layout of the design make this shirt a
-         conversation starter."!"
+         conversation starter."
       </p>
       <h1 className="mt-4">Posted on August 19, 2023</h1>
     </div>
