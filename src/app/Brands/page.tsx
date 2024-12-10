@@ -4,11 +4,6 @@ export default function Cart() {
   return (
     <div className="w-full min-h-screen bg-white ml-7">
       <main className="w-[90%] mx-auto my-10">
-        {/* Breadcrumb */}
-        <div className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &gt; <span>Cart</span>
-        </div>
-
         {/* Cart Header */}
         <h1 className="text-3xl font-bold mb-8">YOUR CART</h1>
 

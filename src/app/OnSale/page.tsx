@@ -5,10 +5,6 @@ export default function ProductDetails() {
     <div className="w-full bg-white">
       {/* Main Product Section */}
       <div className="max-w-7xl mx-auto py-8 px-4">
-        {/* Breadcrumb */}
-        <div className="text-sm text-gray-500 mb-4">
-          Home &gt; Shop &gt; Men &gt; T-shirts
-        </div>
 
         <div className="flex flex-col lg:flex-row gap-5">
   {/* Left Section (Main Image + Thumbnails) */}
