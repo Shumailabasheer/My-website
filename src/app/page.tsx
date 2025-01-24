@@ -1,7 +1,7 @@
 import Hero from "./components/Hero";
 import Product from "./components/Product";
 import Sale from "./components/Sale";
-import Style from "./components/Style";
+import Style from "./components/style";
 import HappyCustomers from "./components/HappyCustomers";
 
 

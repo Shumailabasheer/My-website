@@ -5,6 +5,18 @@ import { CiSearch} from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import Image from "next/image";
 import { useState } from "react";
+import { Menu } from "lucide-react";
+
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import { NavigationMenuDemo } from "./navigation";
+
 
 export default function Navbar() {
   const [showTopBar, setShowTopBar] = useState(true);
@@ -36,15 +48,42 @@ export default function Navbar() {
           <h1 className="text-xl sm:text-2xl font-bold">SHOPE.CO</h1>
         </div>
 
+
+
+
         {/* Right Side */}
         <div className="flex items-center justify-between w-full max-w-[800px]">
           {/* Navigation Links */}
-          <ul className="flex items-center gap-8 font-semibold">
-        <li><Link href="/">Shop</Link></li>
+          <ul className="  hidden md:block">
+            <li className="flex items-center gap-7 font-semibold mr-5">
+        <li><Link href="/">
+        <NavigationMenuDemo/>
+        </Link></li>
        <li><Link href="/OnSale">On Sale</Link></li>
        <li><Link href="/NewArrivals">New Arrivals</Link></li>
        <li><Link href="/Brands">Brands</Link></li>
+    </li>
      </ul>
+
+ {/* ye menu bar hai  */}
+ <Sheet>
+  <SheetTrigger className="md:hidden">
+     <Menu />
+  </SheetTrigger>
+  <SheetContent>
+         <ul>
+                <li className=" flex flex-col space-y-9">
+                    <Link  href="/"><NavigationMenuDemo/></Link>
+                    <Link className="ml-3" href="/On Sale">On Sale</Link>
+                    <Link className="ml-3" href="/New Arrivals">New Arrivals</Link>
+                    <Link className="ml-3" href="/Brands">Brands</Link></li>
+                    <li>
+                
+                </li>
+            </ul>
+  </SheetContent>
+</Sheet>
+
           {/* Search Bar and Icons */}
           <div className="flex items-center space-x-5">
             {/* Search Bar */}

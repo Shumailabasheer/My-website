@@ -1,3 +1,4 @@
+import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 export default function Sale() {
@@ -20,6 +21,7 @@ export default function Sale() {
             {/* Title and Price */}
             <div className="mt-2 text-center">
               <span className="font-bold block">T-SHIRT WITH TAPE DETAILS</span>
+                <span className="flex text-yellow-400 justify-center gap-1"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span>
               <span className="text-black font-bold block">$120</span>
             </div>
           </div>
@@ -33,6 +35,7 @@ export default function Sale() {
             {/* Title and Price */}
             <div className="mt-2 text-center">
               <span className="font-bold block">SKINNY FIT JEANS</span>
+              <span className="flex text-yellow-400 justify-center gap-1"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span>
               <span className="text-black font-bold block">$240</span>
             </div>
           </div>
@@ -46,6 +49,7 @@ export default function Sale() {
             {/* Title and Price */}
             <div className="mt-2 text-center">
               <span className="font-bold block">CHECKERED SHIRT</span>
+              <span className="flex text-yellow-400 justify-center gap-1"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span>
               <span className="text-black font-bold block">$180</span>
             </div>
           </div>
@@ -59,6 +63,7 @@ export default function Sale() {
             {/* Title and Price */}
             <div className="mt-2 text-center">
               <span className="font-bold block">SLEEVE STRIPED T-SHIRT</span>
+              <span className="flex text-yellow-400 justify-center gap-1"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span>
               <span className="text-black font-bold block">$130</span>
             </div>
           </div>
@@ -90,6 +95,7 @@ export default function Sale() {
            </div>
            <div className="mt-2 text-center">
              <span className="font-bold block">Vertical Striped Shirt</span>
+             <span className="flex text-yellow-400 justify-center gap-1"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span>
              <span className="text-black font-bold block">$212</span>
            </div>
          </div>
@@ -101,6 +107,7 @@ export default function Sale() {
            </div>
            <div className="mt-2 text-center">
              <span className="font-bold block">Courage Graphic T-Shirt</span>
+             <span className="flex text-yellow-400 justify-center gap-1"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span>
              <span className="text-black font-bold block">$145</span>
            </div>
          </div>
@@ -112,6 +119,7 @@ export default function Sale() {
            </div>
            <div className="mt-2 text-center">
              <span className="font-bold block">Loose fit Bermuda Shorts</span>
+             <span className="flex text-yellow-400 justify-center gap-1"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span>
              <span className="text-black font-bold block">$80</span>
            </div>
          </div>
@@ -123,6 +131,7 @@ export default function Sale() {
            </div>
            <div className="mt-2 text-center">
              <span className="font-bold block ">Faded Skinny Jeans</span>
+             <span className="flex text-yellow-400 justify-center gap-1"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span>
              <span className="text-black font-bold block">$210</span>
            </div>
          </div>
