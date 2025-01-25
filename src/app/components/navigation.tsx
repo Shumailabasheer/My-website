@@ -1,9 +1,9 @@
 "use client"
- 
-import * as React from "react"
-import Link from "next/link"
- 
-import { cn } from "@/lib/utils"
+
+import * as React from "react";
+import Link from "next/link";
+
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,51 +11,41 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
- 
-const components: { title: string; href: string; description: string }[] = [
+} from "@/components/ui/navigation-menu";
 
+const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    title: "OnSale",
+    href: "/onSale", // Ensure this is a valid route
+    description: "Discover amazing discounts on products.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "NewArrivals",
+    href: "/NewArrivals", // Ensure this is a valid route
+    description: "Check out the latest products in our store.",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    title: "Brands",
+    href: "/brands", // Ensure this is a valid route
+    description: "Explore products from top brands.",
   },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-]
- 
+];
+
 export function NavigationMenuDemo() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <h1 className="font-semibold">SHop</h1>
+            <h1 className="font-semibold">Shop</h1>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
-                  href={component.href}
+                  href={component.href as string} // Ensure href is a valid string
                 >
                   {component.description}
                 </ListItem>
@@ -65,18 +55,19 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  )
+  );
 }
- 
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+>(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
+          href={href!} // Use non-null assertion to ensure href is always defined
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
@@ -87,9 +78,9 @@ const ListItem = React.forwardRef<
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
